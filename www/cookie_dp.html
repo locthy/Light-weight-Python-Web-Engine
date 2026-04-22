@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Your Cookies:</h2>
+    <!-- Paragraph element to display all cookies -->
+    <p id="cookieDisplay"></p>
+
+    <script>
+        // Function to display the raw cookie string
+        function displayCookies() {
+            document.getElementById("cookieDisplay").innerHTML = document.cookie;
+        }
+
+        // Call the function when the page loads
+        window.onload = displayCookies;
+    </script>
+
+</body>
+</html>
