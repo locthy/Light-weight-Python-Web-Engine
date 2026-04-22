@@ -20,5 +20,9 @@ To run the complete architecture, you need to configure your proxy settings, sta
 ### 1. Configure the Proxy
 Before starting the proxy, define your routing rules and load balancing policies in the configuration file located at `config/proxy.conf`. 
 
+### 2. Start the Proxy
+`python start_proxy.py`
+
 ### 2. Start the Backend Server
 Run your backend application by specifying the IP address and port it should listen on. You can spawn multiple backend instances on different ports if you are using the proxy for load balancing.
+* `python start_backend.py --server-ip <your_ip> --server-port <your_port>`
